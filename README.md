@@ -11,10 +11,10 @@ Con las flechas del teclado, el jugador se mueve en el tablero. Para interactuar
 El jugador tendrá la posibilidad de elegir el nivel que desee jugar en la opción 'niveles'. Adicionalmente, si necesita ayuda, podrá visualizarla en la parte inferior izquierda de la pantalla mientras esté jugando algún nivel.
 
 # Instalación
-1. Descomprimir el archivo zip.
-2. Abrir la carpeta 'Juego'.
-3. Dentro de la anterior, se encuentra una carpeta llamada 'Electromag'. Abrir esta carpeta.
-4. Dentro de la carpeta 'Electromag' se encuentra el ejecutable.
+1. Descargar la carpeta 'Electromag.rar' desde el siguiente enlace: https://drive.google.com/file/d/1WBNsUZcvHuoyQCjJS8_2lF0sbe1fIlsA/view?usp=sharing
+2. Descomprimir el archivo zip.
+3. Dentro de la carpeta 'Electromag' se encuentra el ejecutable cuyo nombre es 'Electromag.exe'.
+4. Abrir el juego
 
 # Extra
 Dadas las limitaciones de github, la carpeta 'Coulomb' se encuentra en la siguiente ruta de descarga, esto para el caso en el que se quiera descargar el código y no el ejecutable: el ejecutable contiene la carpeta 'Coulomb' pero dicha carpeta no está en los archivos de GitHub.
