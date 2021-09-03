@@ -14,10 +14,10 @@ pinicial=1
 tiempotutorial=time.time()
 
 pygame.display.set_caption("ELECTROMAG")
-icono = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\neutron.png")
+icono = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\neutron.png")
 pygame.display.set_icon(icono)
 
-musica1 = pygame.mixer.music.load("D:\\un\\2021-1\\programacion\\compu\\musica1.ogg")
+musica1 = pygame.mixer.music.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\musica1.ogg")
 musica1 = pygame.mixer.music.play(-1)
 
 size = (1280, 720)
@@ -39,30 +39,30 @@ x=0
 x_a=0
 
 # Fondos-Imágenes Científicas.
-fondo = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\ImagenesCientificas\\Fondopaola.png").convert()
-fondodiana = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\ImagenesCientificas\\fondodiana.png").convert()
-fondolise = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\ImagenesCientificas\\fondolise.png").convert()
-fondonubia = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\ImagenesCientificas\\fondonubia.png").convert()
-fondomarie = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\ImagenesCientificas\\fondomarie.png").convert()
-fondorosalind = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\ImagenesCientificas\\fondoRosalind.png").convert()
-pinilla= pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\ImagenesCientificas\\2.png").convert()
+fondo = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\ImagenesCientificas\\Fondopaola.png").convert()
+fondodiana = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\ImagenesCientificas\\fondodiana.png").convert()
+fondolise = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\ImagenesCientificas\\fondolise.png").convert()
+fondonubia = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\ImagenesCientificas\\fondonubia.png").convert()
+fondomarie = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\ImagenesCientificas\\fondomarie.png").convert()
+fondorosalind = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\ImagenesCientificas\\fondoRosalind.png").convert()
+pinilla= pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\ImagenesCientificas\\2.png").convert()
 pinilla.set_colorkey(red)
-diana= pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\ImagenesCientificas\\DianaT.png").convert()
+diana= pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\ImagenesCientificas\\DianaT.png").convert()
 diana.set_colorkey(red)
-lise= pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\ImagenesCientificas\\lisem.png").convert()
+lise= pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\ImagenesCientificas\\lisem.png").convert()
 lise.set_colorkey(white)
-nubia= pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\ImagenesCientificas\\nubia1.png").convert()
+nubia= pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\ImagenesCientificas\\nubia1.png").convert()
 nubia.set_colorkey(blue)
-marie= pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\ImagenesCientificas\\mariec.png").convert()
+marie= pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\ImagenesCientificas\\mariec.png").convert()
 marie.set_colorkey(amarillo)
-rosalind= pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\ImagenesCientificas\\Rosalind1.png").convert_alpha()
+rosalind= pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\ImagenesCientificas\\Rosalind1.png").convert_alpha()
 rosalind.set_colorkey(blue)
 #VARIABLE NIVEL
 n=0
 
 class Text:
 
-    def __init__(self, text, pos, fontsize, color, fontname='D:\\un\\2021-1\\programacion\\compu\\Letra\\MP16OSF.ttf', ):
+    def __init__(self, text, pos, fontsize, color, fontname='C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\Letra\\MP16OSF.ttf', ):
         self.text = text
         self.len = len(self.text)+1
         self.pos = pos
@@ -86,7 +86,7 @@ class Text:
     def draw(self):
 
         while self.move:
-            pygame.mixer.music.load("D:\\un\\2021-1\\programacion\\compu\\Musica\\musicacientificas.mp3")
+            pygame.mixer.music.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\Musica\\musicacientificas.mp3")
             pygame.mixer.music.play(-1)
             for n in range(0, self.len):
                 if n == self.len-1:
@@ -105,8 +105,8 @@ class Text:
 def fondom(d):
     global x
     global x_a
-    print('x====', x)
-    print('d=   ', d)
+    ##print('x====', x)
+    ##print('d=   ', d)
     x_a = x % fondo.get_rect().width
     screen.blit(fondo, (x_a - fondo.get_rect().width ,0))
     if x_a < 1280:
@@ -121,8 +121,8 @@ def fondom(d):
 def fondomd(d):
     global x
     global x_a
-    print('x====', x)
-    print('d=   ', d)
+    ##print('x====', x)
+    ##print('d=   ', d)
     x_a = x % fondodiana.get_rect().width
     screen.blit(fondodiana, (x_a - fondodiana.get_rect().width ,0))
     if x_a < 1280:
@@ -137,8 +137,8 @@ def fondomd(d):
 def fondoml(d):
     global x
     global x_a
-    print('x====', x)
-    print('d=   ', d)
+    ##print('x====', x)
+    ##print('d=   ', d)
     x_a = x % fondolise.get_rect().width
     screen.blit(fondolise, (x_a - fondolise.get_rect().width ,0))
     if x_a < 1280:
@@ -153,8 +153,8 @@ def fondoml(d):
 def fondomn(d):
     global x
     global x_a
-    print('x====', x)
-    print('d=   ', d)
+    ##print('x====', x)
+    ##print('d=   ', d)
     x_a = x % fondonubia.get_rect().width
     screen.blit(fondonubia, (x_a - fondonubia.get_rect().width ,0))
     if x_a < 1280:
@@ -170,8 +170,8 @@ def fondomn(d):
 def fondomm(d):
     global x
     global x_a
-    print('x====', x)
-    print('d=   ', d)
+    ##print('x====', x)
+    ##print('d=   ', d)
     x_a = x % fondomarie.get_rect().width
     screen.blit(fondomarie, (x_a - fondomarie.get_rect().width ,0))
     if x_a < 1280:
@@ -186,8 +186,8 @@ def fondomm(d):
 def fondomr(d):
     global x
     global x_a
-    print('x==== rosalind', x)
-    print('d=   ', d)
+    ##print('x==== rosalind', x)
+    ##print('d=   ', d)
     x_a = x % fondorosalind.get_rect().width
     screen.blit(fondorosalind, (x_a - fondorosalind.get_rect().width ,0))
     if x_a < 1280:
@@ -216,7 +216,7 @@ def mouseover(imagen,coordenadas):
     if tx+x > mx >tx:
         if ty+y > my > ty:
             mouse=True
-    #print(coordenadas,x,y,imagen)
+    ###print(coordenadas,x,y,imagen)
     return mouse
 
 class Boton():
@@ -224,138 +224,138 @@ class Boton():
         self.mouse=False
         self.tipo=tipo
         self.coordenadas=coordenadas
-        self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\jugar_1.png").convert_alpha()
+        self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\jugar_1.png").convert_alpha()
 
         #JUGAR
         if self.tipo=='jugar':
             mouse1=mouseover(imagen,coordenadas)
             if mouse1==True:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\jugar_1.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\jugar_1.png").convert_alpha()
                 self.mouse=True
             if mouse1==False:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\jugar_0.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\jugar_0.png").convert_alpha()
                 self.mouse=False
 
         #NIVEL
         if self.tipo=='nivel':
             mouse2=mouseover(imagen,coordenadas)
             if mouse2==True:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\niveles_1.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\niveles_1.png").convert_alpha()
                 self.mouse=True
             if mouse2==False:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\niveles_0.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\niveles_0.png").convert_alpha()
                 self.mouse=False
 
         #PAUSA
         if self.tipo=='pausa':
             mouse3=mouseover(imagen,coordenadas)
             if mouse3==True:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\pausa_1.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\pausa_1.png").convert_alpha()
                 self.mouse=True
             if mouse3==False:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\pausa_0.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\pausa_0.png").convert_alpha()
                 self.mouse=False
 
         #CONTINUAR
         if self.tipo=='continuar':
             mouse4=mouseover(imagen,coordenadas)
             if mouse4==True:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\continuar_1.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\continuar_1.png").convert_alpha()
                 self.mouse=True
             if mouse4==False:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\continuar_0.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\continuar_0.png").convert_alpha()
                 self.mouse=False
         #SALIR
         if self.tipo=='salir':
             mouse5=mouseover(imagen,coordenadas)
             if mouse5==True:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\salir_1.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\salir_1.png").convert_alpha()
                 self.mouse=True
             if mouse5==False:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\salir_0.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\salir_0.png").convert_alpha()
                 self.mouse=False
 
         #NIVEL 1
         if self.tipo=='n1':
-            mouse6=mouseover("D:\\un\\2021-1\\programacion\\compu\\botones\\1_1.png",coordenadas)
+            mouse6=mouseover("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\1_1.png",coordenadas)
             if mouse6==True:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\1_1.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\1_1.png").convert_alpha()
                 self.mouse=True
             if mouse6==False:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\1_0.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\1_0.png").convert_alpha()
                 self.mouse=False
 
         #NIVEL 2
         if self.tipo=='n2':
-            mouse7=mouseover("D:\\un\\2021-1\\programacion\\compu\\botones\\2_1.png",coordenadas)
+            mouse7=mouseover("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\2_1.png",coordenadas)
             if mouse7==True:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\2_1.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\2_1.png").convert_alpha()
                 self.mouse=True
             if mouse7==False:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\2_0.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\2_0.png").convert_alpha()
                 self.mouse=False
 
         #NIVEL 3
         if self.tipo=='n3':
-            mouse8=mouseover("D:\\un\\2021-1\\programacion\\compu\\botones\\3_1.png",coordenadas)
+            mouse8=mouseover("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\3_1.png",coordenadas)
             if mouse8==True:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\3_1.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\3_1.png").convert_alpha()
                 self.mouse=True
             if mouse8==False:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\3_0.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\3_0.png").convert_alpha()
                 self.mouse=False
 
         #NIVEL 4
         if self.tipo=='n4':
-            mouse9=mouseover("D:\\un\\2021-1\\programacion\\compu\\botones\\4_1.png",coordenadas)
+            mouse9=mouseover("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\4_1.png",coordenadas)
             if mouse9==True:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\4_1.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\4_1.png").convert_alpha()
                 self.mouse=True
             if mouse9==False:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\4_0.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\4_0.png").convert_alpha()
                 self.mouse=False
 
         #NIVEL 5
         if self.tipo=='n5':
-            mouse10=mouseover("D:\\un\\2021-1\\programacion\\compu\\botones\\5_1.png",coordenadas)
+            mouse10=mouseover("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\5_1.png",coordenadas)
             if mouse10==True:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\5_1.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\5_1.png").convert_alpha()
                 self.mouse=True
             if mouse10==False:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\5_0.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\5_0.png").convert_alpha()
                 self.mouse=False
 
         #INFO
         if self.tipo=='info':
             mouse11=mouseover(imagen,coordenadas)
             if mouse11==True:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\info_1.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\info_1.png").convert_alpha()
                 self.mouse=True
             if mouse11==False:
-                self.ima = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\botones\\info_0.png").convert_alpha()
+                self.ima = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\info_0.png").convert_alpha()
                 self.mouse=False
 class Objeto():
     def __init__(self,nombre,ubx,uby,obj):
 
-        self.image = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\carga_pos_2.png").convert_alpha()
+        self.image = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\carga_pos_2.png").convert_alpha()
         self.nombre = nombre
-        #print(nombre,'====================== ingame',obj)
+        ###print(nombre,'====================== ingame',obj)
         if obj==False:
-            self.image=pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\vacio.png").convert_alpha()
+            self.image=pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\vacio.png").convert_alpha()
         elif nombre == "positivo":
-            self.image = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\carga_pos_2.png").convert_alpha()
+            self.image = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\carga_pos_2.png").convert_alpha()
 
         elif nombre == "negativo":
-            self.image = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\carga_neg_2.png").convert_alpha()
+            self.image = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\carga_neg_2.png").convert_alpha()
 
         elif nombre == "neutro":
-            self.image = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\carga_net_2.png").convert_alpha()
+            self.image = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\carga_net_2.png").convert_alpha()
 
         elif nombre == "maquina":
-            self.image = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\maquina_fusion.png").convert_alpha()
+            self.image = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\maquina_fusion.png").convert_alpha()
 
         elif nombre == "tablero":
-          self.image=pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\tablero MK II.png").convert_alpha()
+          self.image=pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\tablero MK II.png").convert_alpha()
 
         self.posip= m.trannp(ubx,uby)
         self.posin=[ubx,uby]
@@ -374,12 +374,12 @@ class Grid():
                 k=(((i*size)+start[0]),((j*size)+start[1]))
                 mb1.append(b)
                 mn1.append(k)
-                #print(mb1)
+                ###print(mb1)
             mb.append(mb1)
             mn.append(mn1)
 
-        #print(mb[5][3])
-        #print(mn[5][3])
+        ###print(mb[5][3])
+        ###print(mn[5][3])
         self.matrizp=mn
         self.matrizb=mb
 
@@ -396,40 +396,40 @@ m=Grid(64,(390,110))
 
 class Player(Objeto):
   def __init__(self,nombre,posxn,posyn, obj,sentido='0'):
-    super().__init__(nombre,posxn,posyn,obj)
+    super().__init__(nombre,posxn,posyn, obj)
 
-    #print('objjjjjj====================/////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\=====================',obj)
+    ###print('objjjjjj====================/////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\=====================',obj)
     self.grab=None
-    self.image=pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\personaje.png").convert_alpha()
-
+    self.image=pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\personaje.png").convert_alpha()
+    #print(sentido, 'SE ESTÁ VOLVIENDO TRUE WTF')
     if sentido=='down':
-        self.image=pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\perdown.png").convert_alpha()
-        #print('cambio abajo')
+        self.image=pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\perdown.png").convert_alpha()
+        ###print('cambio abajo')
     if sentido=='up':
-        self.image=pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\perup.png").convert_alpha()
-        # print('cambio up')
+        self.image=pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\perup.png").convert_alpha()
+        # ##print('cambio up')
     if sentido=='left':
-        self.image=pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\perleft.png").convert_alpha()
-        # print('cambio izquiera')
+        self.image=pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\perleft.png").convert_alpha()
+        # ##print('cambio izquiera')
     if sentido=='right':
-        self.image=pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\perright.png").convert_alpha()
-        # print('cambio derecha')
+        self.image=pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\perright.png").convert_alpha()
+        # ##print('cambio derecha')
 
 
 
 #FONDOS
-fondo1 = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\fondo1.png").convert()
-fondo2 = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\fondo2.png").convert()
-fondo3 = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\fondo3.png").convert()
-fondo4 = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\fondo4.png").convert()
-fondo5 = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\fondo5.png").convert()
-fondo_niveles= pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\fondo_niveles.png").convert()
-menu_pausa = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\menu_pausa_.png").convert()
+fondo1 = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\fondo1.png").convert()
+fondo2 = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\fondo2.png").convert()
+fondo3 = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\fondo3.png").convert()
+fondo4 = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\fondo4.png").convert()
+fondo5 = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\fondo5.png").convert()
+fondo_niveles= pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\fondo_niveles.png").convert()
+menu_pausa = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\menu_pausa_.png").convert()
 menu_pausa.set_colorkey([0,0,0])
-game_over=pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\game_over.png").convert()
-tutorial = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\tutorial.png").convert_alpha()
-tutorial2 = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\tutorial_2.png").convert_alpha()
-fondo_ganaste = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\ganaste.png").convert_alpha()
+game_over=pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\game_over.png").convert()
+tutorial = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\tutorial.png").convert_alpha()
+tutorial2 = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\tutorial_2.png").convert_alpha()
+fondo_ganaste = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\ganaste.png").convert_alpha()
 
 class Gamestate():
     def __init__(self):
@@ -694,7 +694,7 @@ class Gamestate():
         self.state='ganaste'
     def videoCoulomb(self):
         global tiempotutorial
-        coulomb ='D:\\un\\2021-1\\programacion\\compu\\Coulomb'
+        coulomb ='C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\Coulomb'
         num_of_frames = len(os.listdir(coulomb))
         pygame.mixer.music.load("Musica/musicacoulomb.mp3")
         pygame.mixer.music.play(-1)
@@ -707,22 +707,22 @@ class Gamestate():
             pass
             tiempotutorial=time.time()
             self.state='tutorial'
-            #print(self.state)
+            ###print(self.state)
         pygame.display.flip()
     def intro(self):
         global done
         coorxy=[640-152,420-32]
         coorxy2=[640-152,420+50]
-        boton1=Boton('jugar','D:\\un\\2021-1\\programacion\\compu\\botones\\jugar_0.png',coorxy)
+        boton1=Boton('jugar','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\jugar_0.png',coorxy)
         imagenboton1=boton1.ima
-        boton2=Boton('nivel','D:\\un\\2021-1\\programacion\\compu\\botones\\niveles_0.png',coorxy2)
+        boton2=Boton('nivel','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\niveles_0.png',coorxy2)
         imagenboton2=boton2.ima
         for event in pygame.event.get():
             screen.blit(portada, [0, 0])
             coorxy=[640-152,420-32]
             screen.blit(imagenboton1,coorxy)
             screen.blit(imagenboton2,coorxy2)
-            #print('intro')
+            ###print('intro')
             #SALIR
             if event.type == pygame.QUIT:
                 done = True
@@ -745,10 +745,10 @@ class Gamestate():
         pygame.display.flip()
     def gameover(self):
         global done
-        print('aqui hay ejecucion-----------------------------------')
+        ##print('aqui hay ejecucion-----------------------------------')
         screen.blit(game_over,(0,0))
         coorxy=[482,544]
-        boton1=Boton('salir','D:\\un\\2021-1\\programacion\\compu\\botones\\salir_0.png',coorxy)
+        boton1=Boton('salir','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\salir_0.png',coorxy)
         imagenboton1=boton1.ima
         screen.blit(imagenboton1,coorxy)
         for event in pygame.event.get():
@@ -766,8 +766,8 @@ class Gamestate():
         global inicio
         coorxy=[900,500]
         t=time.time()-tiempotutorial
-        print(int(t))
-        boton1=Boton('jugar','D:\\un\\2021-1\\programacion\\compu\\botones\\continuar_0.png',coorxy)
+        ##print(int(t))
+        boton1=Boton('jugar','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\continuar_0.png',coorxy)
         imagenboton1=boton1.ima
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -783,7 +783,7 @@ class Gamestate():
                 screen.blit(imagenboton1,coorxy)
             pygame.display.flip()
 
-        if int(t)>20:            #print('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
+        if int(t)>20:            ###print('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
             for event in pygame.event.get():
                 if event.type==pygame.MOUSEBUTTONDOWN:
                     if boton1.mouse==True:
@@ -807,13 +807,13 @@ class Gamestate():
                         inicio=time.time()
                         self.state='nivel_1'
                         pygame.display.flip()
-            print(self.state)
+            ##print(self.state)
         pygame.display.flip()
 
     def info(self):
         global done
         coorxy=[482,232]
-        boton1=Boton('continuar','D:\\un\\2021-1\\programacion\\compu\\botones\\continuar_0.png',coorxy)
+        boton1=Boton('continuar','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\continuar_0.png',coorxy)
         imagenboton1=boton1.ima
         for event in pygame.event.get():
 
@@ -869,15 +869,15 @@ class Gamestate():
         coorxy5=[192+(153*4),232]
 
         #BOTONES
-        boton1=Boton('n1','D:\\un\\2021-1\\programacion\\compu\\botones\\1_0.png',coorxy)
+        boton1=Boton('n1','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\1_0.png',coorxy)
         imagenboton1=boton1.ima
-        boton2=Boton('n2','D:\\un\\2021-1\\programacion\\compu\\botones\\2_0.png',coorxy2)
+        boton2=Boton('n2','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\2_0.png',coorxy2)
         imagenboton2=boton2.ima
-        boton3=Boton('n3','D:\\un\\2021-1\\programacion\\compu\\botones\\3_0.png',coorxy3)
+        boton3=Boton('n3','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\3_0.png',coorxy3)
         imagenboton3=boton3.ima
-        boton4=Boton('n4','D:\\un\\2021-1\\programacion\\compu\\botones\\4_0.png',coorxy4)
+        boton4=Boton('n4','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\4_0.png',coorxy4)
         imagenboton4=boton4.ima
-        boton5=Boton('n5','D:\\un\\2021-1\\programacion\\compu\\botones\\5_0.png',coorxy5)
+        boton5=Boton('n5','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\5_0.png',coorxy5)
         imagenboton5=boton5.ima
 
 
@@ -1004,7 +1004,7 @@ class Gamestate():
     def ganaste(self):
         global done
         coorxy=[482,102]
-        boton1=Boton('salir','D:\\un\\2021-1\\programacion\\compu\\botones\\salir_0.png',coorxy)
+        boton1=Boton('salir','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\salir_0.png',coorxy)
         imagenboton1=boton1.ima
         for event in pygame.event.get():
             screen.blit(fondo_ganaste, [0, 0])
@@ -1022,11 +1022,11 @@ class Gamestate():
         coorxy=[482,232]
         coorxy2=[482,328]
         coorxy3=[482,424]
-        boton1=Boton('continuar','D:\\un\\2021-1\\programacion\\compu\\botones\\continuar_0.png',coorxy)
+        boton1=Boton('continuar','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\continuar_0.png',coorxy)
         imagenboton1=boton1.ima
-        boton2=Boton('nivel','D:\\un\\2021-1\\programacion\\compu\\botones\\niveles_0.png',coorxy2)
+        boton2=Boton('nivel','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\niveles_0.png',coorxy2)
         imagenboton2=boton2.ima
-        boton3=Boton('salir','D:\\un\\2021-1\\programacion\\compu\\botones\\niveles_0.png',coorxy3)
+        boton3=Boton('salir','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\niveles_0.png',coorxy3)
         imagenboton3=boton3.ima
         for event in pygame.event.get():
             screen.blit(menu_pausa, [0, 0])
@@ -1056,7 +1056,7 @@ class Gamestate():
         pygame.display.flip()
 
     def nivel_1(self):
-        print('esto es un ciclo----------------------------------------------------------------')
+        ##print('esto es un ciclo----------------------------------------------------------------')
         pygame.display.flip()
         #Cositas para el Reloj
         timer_font = pygame.font.Font('fuentes\joystix monospace.ttf', 35)
@@ -1073,21 +1073,21 @@ class Gamestate():
 
         tactual=inicio-(time.time())
         timer_sec=int(timer_limit+tactual)
-        #print(timer_sec,'=========',tactual)
+        ###print(timer_sec,'=========',tactual)
         pygame.display.update()
         timer_text = timer_font.render(datetime.utcfromtimestamp(timer_sec).strftime('%M:%S'), True, (255, 255, 255))
         #counter=timer_font.render(pinicial,True,(255, 255, 255))
         coorxy=[8,8]
-        boton3=Boton('pausa','D:\\un\\2021-1\\programacion\\compu\\botones\\pausa_0.png',coorxy)
+        boton3=Boton('pausa','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\pausa_0.png',coorxy)
         imagenboton3=boton3.ima
         coorxy2=[0,576]
-        boton4=Boton('info','D:\\un\\2021-1\\programacion\\compu\\botones\\info_0.png',coorxy2)
+        boton4=Boton('info','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\info_0.png',coorxy2)
         imagenboton4=boton4.ima
         L=[carga1neg_pos, carga1pos_pos, carga2pos_pos,carga1net_pos]
           #,carga3pos,carganeg1,carganeg2,carganet1,carganet2]
 
         for event in pygame.event.get():
-            #print('pygame event')
+            ###print('pygame event')
             equilibrio(L)
             if event.type == pygame.QUIT:
                 done = True
@@ -1099,15 +1099,15 @@ class Gamestate():
             screen.blit(fondo1, [0, 0])
 
 
-            print(playerpos.ingame)
-            player=Player('player',playerpos.posxn,playerpos.posyn,sentido, playerpos.ingame)
+            #print(sentido, '=================================>')
+            player=Player('player',playerpos.posxn,playerpos.posyn, playerpos.ingame,sentido)
             carga1=Objeto('positivo',(carga1pos_pos.posxn),(carga1pos_pos.posyn),carga1pos_pos.ingame)
             carga2=Objeto('positivo',(carga2pos_pos.posxn),(carga2pos_pos.posyn),carga2pos_pos.ingame)
             carga3=Objeto('negativo', (carga1neg_pos.posxn), (carga1neg_pos.posyn),carga1neg_pos.ingame)
             carga4=Objeto('neutro', (carga1net_pos.posxn), (carga1net_pos.posyn),carga1net_pos.ingame)
             maquina=Objeto('maquina', (maquinapos.posxn-1), (maquinapos.posyn-1),maquinapos)
-            #print(carga1pos.posn,'====>',carga1pos.posxn)
-            screen.blit(pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\tablero MK II.png").convert_alpha(), (390,110))
+            ###print(carga1pos.posn,'====>',carga1pos.posxn)
+            screen.blit(pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\tablero MK II.png").convert_alpha(), (390,110))
             screen.blit(UI,[0,0])
             screen.blit(maquina.image, maquina.posip)
             screen.blit(player.image,player.posip)
@@ -1122,7 +1122,9 @@ class Gamestate():
                   #movimiento jugador
                   if event.key == pygame.K_DOWN:
                     playerpos.changepos('down')
+                    #print(sentido)
                     sentido='down'
+                    #print(sentido)
                   if event.key == pygame.K_UP:
                     playerpos.changepos('up')
                     sentido='up'
@@ -1136,25 +1138,25 @@ class Gamestate():
               if event.key == pygame.K_SPACE:
                   grab=True
                   proximo=proximidad(L, playerpos.posxn, playerpos.posyn) #busca la partícula más cercana al jugador
-                  print('aquí debería existir encontrado =============>')
+                  ##print('aquí debería existir encontrado =============>')
                   if proximo==False:
                       grab=False
                   if proximo!=False:
-                      #print('parent fue creado')
+                      ###print('parent fue creado')
                       parent,dx,dy=playerpos.parent(proximo)
-                      #print(parent,dx,dy)
+                      ###print(parent,dx,dy)
               if event.key == pygame.K_e:
                 if grab==True:
                   grab=False
                   player.grab=False
                   proximo.grabbed = False
-                  #print('grab false')
+                  ###print('grab false')
               if grab==True:
                 player.grab=True
 
 
               if player.grab==True:
-                  print('aquí debería referenciar encontrado =============>')
+                  ##print('aquí debería referenciar encontrado =============>')
                   if event.key == pygame.K_DOWN:
                     playerpos.changeparent(proximo,'down',parent)
                   if event.key == pygame.K_UP:
@@ -1168,14 +1170,14 @@ class Gamestate():
             proton=proximomaquinap(L,(maquinapos.posxn),(maquinapos.posyn))
             electron=proximomaquinae(L,(maquinapos.posxn),(maquinapos.posyn))
             neutron=proximomaquinan(L,(maquinapos.posxn),(maquinapos.posyn))
-            print(pinicial)
+            ##print(pinicial)
             if proton!=None and electron!=None and neutron!=None:
                 contador=atomo(maquinapos,proton,electron,neutron,pinicial,proximo,player)
             else:
                 contador=None
             if contador!=None:
                 pinicial=contador
-            print(pinicial)
+            ##print(pinicial)
         timer_text = timer_font.render(datetime.utcfromtimestamp(timer_sec).strftime('%M:%S'), True, (255, 255, 255))
         counter=timer_font.render(datetime.utcfromtimestamp(pinicial).strftime('%S'),True,(255, 255, 255))
         if pinicial==0:
@@ -1184,9 +1186,9 @@ class Gamestate():
             global x
             x=0
             self.state='videoc_1'
-        print(timer_sec)
+        ##print(timer_sec)
         if timer_sec==0:
-            print('llega aqui----------------------------------')
+            ##print('llega aqui----------------------------------')
             self.state='gameover'
         screen.blit(UI,[0,0])
         screen.blit(imagenboton3,coorxy)
@@ -1211,22 +1213,22 @@ class Gamestate():
 
         tactual=inicio-(time.time())
         timer_sec=int(timer_limit+tactual)
-        #print(timer_sec,'=========',tactual)
+        ###print(timer_sec,'=========',tactual)
         pygame.display.update()
         timer_text = timer_font.render(datetime.utcfromtimestamp(timer_sec).strftime('%M:%S'), True, (255, 255, 255))
         #counter=timer_font.render(pinicial,True,(255, 255, 255))
         coorxy=[8,8]
-        boton3=Boton('pausa','D:\\un\\2021-1\\programacion\\compu\\botones\\pausa_0.png',coorxy)
+        boton3=Boton('pausa','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\pausa_0.png',coorxy)
         imagenboton3=boton3.ima
         coorxy2=[0,576]
-        boton4=Boton('info','D:\\un\\2021-1\\programacion\\compu\\botones\\info_0.png',coorxy2)
+        boton4=Boton('info','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\info_0.png',coorxy2)
         imagenboton4=boton4.ima
         #L=[carga1neg_pos, carga2neg_pos, carga3neg_pos, carga4neg_pos, carga1pos_pos, carga2pos_pos, carga1net_pos, carga2net_pos]
         L=[carga1neg_pos, carga2neg_pos, carga1pos_pos, carga2pos_pos, carga1net_pos, carga2net_pos]
           #,carga3pos,carganeg1,carganeg2,carganet1,carganet2]
 
         for event in pygame.event.get():
-            #print('pygame event')
+            ###print('pygame event')
             equilibrio(L)
             if event.type == pygame.QUIT:
                 done = True
@@ -1238,8 +1240,8 @@ class Gamestate():
             screen.blit(fondo2, [0, 0])
 
 
-            print(playerpos.ingame)
-            player=Player('player',playerpos.posxn,playerpos.posyn,sentido, playerpos.ingame)
+            ##print(playerpos.ingame)
+            player=Player('player',playerpos.posxn,playerpos.posyn, playerpos.ingame,sentido)
             carga1=Objeto('positivo',(carga1pos_pos.posxn),(carga1pos_pos.posyn),carga1pos_pos.ingame)
             carga2=Objeto('positivo',(carga2pos_pos.posxn),(carga2pos_pos.posyn),carga2pos_pos.ingame)
             carga3=Objeto('negativo', (carga1neg_pos.posxn), (carga1neg_pos.posyn),carga1neg_pos.ingame)
@@ -1250,8 +1252,8 @@ class Gamestate():
             carga8=Objeto('neutro', (carga2net_pos.posxn), (carga2net_pos.posyn),carga2net_pos.ingame)
             maquina=Objeto('maquina', (maquinapos.posxn-1), (maquinapos.posyn-1),maquinapos)
 
-            #print(carga1pos.posn,'====>',carga1pos.posxn)
-            screen.blit(pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\tablero MK II.png").convert_alpha(), (390,110))
+            ###print(carga1pos.posn,'====>',carga1pos.posxn)
+            screen.blit(pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\tablero MK II.png").convert_alpha(), (390,110))
             screen.blit(UI,[0,0])
             screen.blit(maquina.image, maquina.posip)
             screen.blit(player.image,player.posip)
@@ -1284,24 +1286,24 @@ class Gamestate():
               if event.key == pygame.K_SPACE:
                   grab=True
                   proximo=proximidad(L, playerpos.posxn, playerpos.posyn) #busca la partícula más cercana al jugador
-                  #print('aquí debería existir encontrado =============>')
+                  ###print('aquí debería existir encontrado =============>')
                   if proximo==False:
                       grab=False
                   if proximo!=False:
-                      #print('parent fue creado')
+                      ###print('parent fue creado')
                       parent,dx,dy=playerpos.parent(proximo)
-                      #print(parent,dx,dy)
+                      ###print(parent,dx,dy)
 
               if event.key == pygame.K_e:
                 if grab==True:
                   grab=False
                   player.grab=False
                   proximo.grabbed = False
-                  #print('grab false')
+                  ###print('grab false')
               if grab==True:
                 player.grab=True
               if player.grab==True:
-                  print('aquí debería referenciar encontrado =============>')
+                  ##print('aquí debería referenciar encontrado =============>')
                   if event.key == pygame.K_DOWN:
                     playerpos.changeparent(proximo,'down',parent)
                   if event.key == pygame.K_UP:
@@ -1314,12 +1316,12 @@ class Gamestate():
             proton=proximomaquinap(L,(maquinapos.posxn),(maquinapos.posyn))
             electron=proximomaquinae(L,(maquinapos.posxn),(maquinapos.posyn))
             neutron=proximomaquinan(L,(maquinapos.posxn),(maquinapos.posyn))
-            print(pinicial,' coooooooooooooooooontador')
+            ##print(pinicial,' coooooooooooooooooontador')
             if proton!=None and electron!=None and neutron!=None:
                 contador=atomo(maquinapos,proton,electron,neutron,pinicial,proximo,player)
-                print('proton--',proton.posxn,proton.posyn,'estadoooo----- ingame',proton.ingame)
-                print('electron--',electron.posxn,electron.posyn,'estadoooo----- ingame',electron.ingame)
-                print('neutron--',neutron.posxn,neutron.posyn,'estadoooo----- ingame',neutron.ingame)
+                ##print('proton--',proton.posxn,proton.posyn,'estadoooo----- ingame',proton.ingame)
+                ##print('electron--',electron.posxn,electron.posyn,'estadoooo----- ingame',electron.ingame)
+                ##print('neutron--',neutron.posxn,neutron.posyn,'estadoooo----- ingame',neutron.ingame)
                 proton=None
                 electron=None
                 neutron=None
@@ -1327,11 +1329,11 @@ class Gamestate():
                 contador=None
             if contador!=None:
                 pinicial=contador
-            #print(pinicial)
+            ###print(pinicial)
             #Relo
             if contador!=None:
                 pinicial=contador
-            #print(pinicial)
+            ###print(pinicial)
         timer_text = timer_font.render(datetime.utcfromtimestamp(timer_sec).strftime('%M:%S'), True, (255, 255, 255))
         counter=timer_font.render(datetime.utcfromtimestamp(pinicial).strftime('%S'),True,(255, 255, 255))
         if pinicial==0:
@@ -1340,9 +1342,9 @@ class Gamestate():
             global x
             x=0
             self.state='videoc_2'
-        print(timer_sec)
+        ##print(timer_sec)
         if timer_sec==0:
-            print('llega aqui----------------------------------')
+            ##print('llega aqui----------------------------------')
             self.state='gameover'
         screen.blit(UI,[0,0])
         screen.blit(imagenboton3,coorxy)
@@ -1368,21 +1370,21 @@ class Gamestate():
 
         tactual=inicio-(time.time())
         timer_sec=int(timer_limit+tactual)
-        #print(timer_sec,'=========',tactual)
+        ###print(timer_sec,'=========',tactual)
         pygame.display.update()
         timer_text = timer_font.render(datetime.utcfromtimestamp(timer_sec).strftime('%M:%S'), True, (255, 255, 255))
         #counter=timer_font.render(pinicial,True,(255, 255, 255))
         coorxy=[8,8]
-        boton3=Boton('pausa','D:\\un\\2021-1\\programacion\\compu\\botones\\pausa_0.png',coorxy)
+        boton3=Boton('pausa','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\pausa_0.png',coorxy)
         imagenboton3=boton3.ima
         coorxy2=[0,576]
-        boton4=Boton('info','D:\\un\\2021-1\\programacion\\compu\\botones\\info_0.png',coorxy2)
+        boton4=Boton('info','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\info_0.png',coorxy2)
         imagenboton4=boton4.ima
         L=[carga1neg_pos, carga2neg_pos, carga1pos_pos, carga2pos_pos,carga3pos_pos, carga4pos_pos, carga1net_pos, carga2net_pos, carga3net_pos]
           #,carga3pos,carganeg1,carganeg2,carganet1,carganet2]
 
         for event in pygame.event.get():
-            #print('pygame event')
+            ###print('pygame event')
             equilibrio(L)
             if event.type == pygame.QUIT:
                 done = True
@@ -1394,8 +1396,8 @@ class Gamestate():
             screen.blit(fondo3, [0, 0])
 
 
-            print(playerpos.ingame)
-            player=Player('player',playerpos.posxn,playerpos.posyn,sentido, playerpos.ingame)
+            ##print(playerpos.ingame)
+            player=Player('player',playerpos.posxn,playerpos.posyn, playerpos.ingame,sentido)
             carga1=Objeto('positivo',(carga1pos_pos.posxn),(carga1pos_pos.posyn),carga1pos_pos.ingame)
             carga2=Objeto('positivo',(carga2pos_pos.posxn),(carga2pos_pos.posyn),carga2pos_pos.ingame)
             carga3=Objeto('positivo',(carga3pos_pos.posxn),(carga3pos_pos.posyn),carga3pos_pos.ingame)
@@ -1407,8 +1409,8 @@ class Gamestate():
             carga9=Objeto('neutro', (carga3net_pos.posxn), (carga3net_pos.posyn),carga3net_pos.ingame)
             maquina=Objeto('maquina', (maquinapos.posxn-1), (maquinapos.posyn-1),maquinapos)
 
-            #print(carga1pos.posn,'====>',carga1pos.posxn)
-            screen.blit(pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\tablero MK II.png").convert_alpha(), (390,110))
+            ###print(carga1pos.posn,'====>',carga1pos.posxn)
+            screen.blit(pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\tablero MK II.png").convert_alpha(), (390,110))
             screen.blit(UI,[0,0])
             screen.blit(maquina.image, maquina.posip)
             screen.blit(player.image,player.posip)
@@ -1445,20 +1447,20 @@ class Gamestate():
               if event.key == pygame.K_SPACE:
                   grab=True
                   proximo=proximidad(L, playerpos.posxn, playerpos.posyn) #busca la partícula más cercana al jugador
-                  print('aquí debería existir encontrado =============>')
+                  ##print('aquí debería existir encontrado =============>')
                   if proximo==False:
                       grab=False
                   if proximo!=False:
-                      #print('parent fue creado')
+                      ###print('parent fue creado')
                       parent,dx,dy=playerpos.parent(proximo)
-                      #print(parent,dx,dy)
+                      ###print(parent,dx,dy)
 
               if event.key == pygame.K_e:
                 if grab==True:
                   grab=False
                   player.grab=False
                   proximo.grabbed = False
-                  #print('grab false')
+                  ###print('grab false')
 
 
 
@@ -1467,7 +1469,7 @@ class Gamestate():
 
 
               if player.grab==True:
-                  print('aquí debería referenciar encontrado =============>')
+                  ##print('aquí debería referenciar encontrado =============>')
                   if event.key == pygame.K_DOWN:
                     playerpos.changeparent(proximo,'down',parent)
                   if event.key == pygame.K_UP:
@@ -1481,7 +1483,7 @@ class Gamestate():
             proton=proximomaquinap(L,(maquinapos.posxn),(maquinapos.posyn))
             electron=proximomaquinae(L,(maquinapos.posxn),(maquinapos.posyn))
             neutron=proximomaquinan(L,(maquinapos.posxn),(maquinapos.posyn))
-            print(pinicial)
+            ##print(pinicial)
 
             if proton!=None and electron!=None and neutron!=None:
                 contador=atomo(maquinapos,proton,electron,neutron,pinicial,proximo,player)
@@ -1489,7 +1491,7 @@ class Gamestate():
                 contador=None
             if contador!=None:
                 pinicial=contador
-            print(pinicial)
+            ##print(pinicial)
         timer_text = timer_font.render(datetime.utcfromtimestamp(timer_sec).strftime('%M:%S'), True, (255, 255, 255))
         counter=timer_font.render(datetime.utcfromtimestamp(pinicial).strftime('%S'),True,(255, 255, 255))
         if pinicial==0:
@@ -1499,9 +1501,9 @@ class Gamestate():
             x=0
             self.state='videoc_3'
 
-        print(timer_sec)
+        ##print(timer_sec)
         if timer_sec==0:
-            print('llega aqui----------------------------------')
+            ##print('llega aqui----------------------------------')
             self.state='gameover'
         screen.blit(UI,[0,0])
         screen.blit(imagenboton3,coorxy)
@@ -1526,21 +1528,21 @@ class Gamestate():
 
         tactual=inicio-(time.time())
         timer_sec=int(timer_limit+tactual)
-        #print(timer_sec,'=========',tactual)
+        ###print(timer_sec,'=========',tactual)
         pygame.display.update()
         timer_text = timer_font.render(datetime.utcfromtimestamp(timer_sec).strftime('%M:%S'), True, (255, 255, 255))
         #counter=timer_font.render(pinicial,True,(255, 255, 255))
         coorxy=[8,8]
-        boton3=Boton('pausa','D:\\un\\2021-1\\programacion\\compu\\botones\\pausa_0.png',coorxy)
+        boton3=Boton('pausa','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\pausa_0.png',coorxy)
         imagenboton3=boton3.ima
         coorxy2=[0,576]
-        boton4=Boton('info','D:\\un\\2021-1\\programacion\\compu\\botones\\info_0.png',coorxy2)
+        boton4=Boton('info','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\info_0.png',coorxy2)
         imagenboton4=boton4.ima
         L=[carga1neg_pos, carga2neg_pos, carga3neg_pos, carga1pos_pos, carga2pos_pos, carga1net_pos, carga2net_pos, carga3net_pos, carga4net_pos]
           #,carga3pos,carganeg1,carganeg2,carganet1,carganet2]
 
         for event in pygame.event.get():
-            #print('pygame event')
+            ###print('pygame event')
             equilibrio(L)
             if event.type == pygame.QUIT:
                 done = True
@@ -1552,8 +1554,8 @@ class Gamestate():
             screen.blit(fondo4, [0, 0])
 
 
-            print(playerpos.ingame)
-            player=Player('player',playerpos.posxn,playerpos.posyn,sentido, playerpos.ingame)
+            ##print(playerpos.ingame)
+            player=Player('player',playerpos.posxn,playerpos.posyn, playerpos.ingame,sentido)
             carga1=Objeto('positivo',(carga1pos_pos.posxn),(carga1pos_pos.posyn),carga1pos_pos.ingame)
             carga2=Objeto('positivo',(carga2pos_pos.posxn),(carga2pos_pos.posyn),carga2pos_pos.ingame)
             carga3=Objeto('negativo', (carga1neg_pos.posxn), (carga1neg_pos.posyn),carga1neg_pos.ingame)
@@ -1565,8 +1567,8 @@ class Gamestate():
             carga9=Objeto('neutro', (carga4net_pos.posxn), (carga4net_pos.posyn),carga4net_pos.ingame)
             maquina=Objeto('maquina', (maquinapos.posxn-1), (maquinapos.posyn-1),maquinapos)
 
-            #print(carga1pos.posn,'====>',carga1pos.posxn)
-            screen.blit(pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\tablero MK II.png").convert_alpha(), (390,110))
+            ###print(carga1pos.posn,'====>',carga1pos.posxn)
+            screen.blit(pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\tablero MK II.png").convert_alpha(), (390,110))
             screen.blit(UI,[0,0])
             screen.blit(maquina.image, maquina.posip)
             screen.blit(player.image,player.posip)
@@ -1603,20 +1605,20 @@ class Gamestate():
               if event.key == pygame.K_SPACE:
                   grab=True
                   proximo=proximidad(L, playerpos.posxn, playerpos.posyn) #busca la partícula más cercana al jugador
-                  print('aquí debería existir encontrado =============>')
+                  ##print('aquí debería existir encontrado =============>')
                   if proximo==False:
                       grab=False
                   if proximo!=False:
-                      #print('parent fue creado')
+                      ###print('parent fue creado')
                       parent,dx,dy=playerpos.parent(proximo)
-                      #print(parent,dx,dy)
+                      ###print(parent,dx,dy)
 
               if event.key == pygame.K_e:
                 if grab==True:
                   grab=False
                   player.grab=False
                   proximo.grabbed = False
-                  #print('grab false')
+                  ###print('grab false')
 
 
 
@@ -1625,7 +1627,7 @@ class Gamestate():
 
 
               if player.grab==True:
-                  print('aquí debería referenciar encontrado =============>')
+                  ##print('aquí debería referenciar encontrado =============>')
                   if event.key == pygame.K_DOWN:
                     playerpos.changeparent(proximo,'down',parent)
                   if event.key == pygame.K_UP:
@@ -1638,14 +1640,14 @@ class Gamestate():
             proton=proximomaquinap(L,(maquinapos.posxn),(maquinapos.posyn))
             electron=proximomaquinae(L,(maquinapos.posxn),(maquinapos.posyn))
             neutron=proximomaquinan(L,(maquinapos.posxn),(maquinapos.posyn))
-            print(pinicial)
+            ##print(pinicial)
             if proton!=None and electron!=None and neutron!=None:
                 contador=atomo(maquinapos,proton,electron,neutron,pinicial,proximo,player)
             else:
                 contador=None
             if contador!=None:
                 pinicial=contador
-            print(pinicial)
+            ##print(pinicial)
         timer_text = timer_font.render(datetime.utcfromtimestamp(timer_sec).strftime('%M:%S'), True, (255, 255, 255))
         counter=timer_font.render(datetime.utcfromtimestamp(pinicial).strftime('%S'),True,(255, 255, 255))
         if pinicial==0:
@@ -1655,9 +1657,9 @@ class Gamestate():
             x=0
             self.state= 'videoc_4'
 
-        print(timer_sec)
+        ##print(timer_sec)
         if timer_sec==0:
-            print('llega aqui----------------------------------')
+            ##print('llega aqui----------------------------------')
             self.state='gameover'
         screen.blit(UI,[0,0])
         screen.blit(imagenboton3,coorxy)
@@ -1683,21 +1685,21 @@ class Gamestate():
 
         tactual=inicio-(time.time())
         timer_sec=int(timer_limit+tactual)
-        #print(timer_sec,'=========',tactual)
+        ###print(timer_sec,'=========',tactual)
         pygame.display.update()
         timer_text = timer_font.render(datetime.utcfromtimestamp(timer_sec).strftime('%M:%S'), True, (255, 255, 255))
         #counter=timer_font.render(pinicial,True,(255, 255, 255))
         coorxy=[8,8]
-        boton3=Boton('pausa','D:\\un\\2021-1\\programacion\\compu\\botones\\pausa_0.png',coorxy)
+        boton3=Boton('pausa','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\pausa_0.png',coorxy)
         imagenboton3=boton3.ima
         coorxy2=[0,576]
-        boton4=Boton('info','D:\\un\\2021-1\\programacion\\compu\\botones\\info_0.png',coorxy2)
+        boton4=Boton('info','C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\info_0.png',coorxy2)
         imagenboton4=boton4.ima
         L=[carga1neg_pos, carga2neg_pos, carga3neg_pos, carga1pos_pos, carga2pos_pos, carga3pos_pos, carga4pos_pos, carga1net_pos, carga2net_pos, carga3net_pos]
           #,carga3pos,carganeg1,carganeg2,carganet1,carganet2]
 
         for event in pygame.event.get():
-            #print('pygame event')
+            ###print('pygame event')
             equilibrio(L)
             if event.type == pygame.QUIT:
                 done = True
@@ -1709,8 +1711,8 @@ class Gamestate():
             screen.blit(fondo5, [0, 0])
 
 
-            print(playerpos.ingame)
-            player=Player('player',playerpos.posxn,playerpos.posyn,sentido, playerpos.ingame)
+            ##print(playerpos.ingame)
+            player=Player('player',playerpos.posxn,playerpos.posyn, playerpos.ingame,sentido)
             carga1=Objeto('positivo',(carga1pos_pos.posxn),(carga1pos_pos.posyn),carga1pos_pos.ingame)
             carga2=Objeto('positivo',(carga2pos_pos.posxn),(carga2pos_pos.posyn),carga2pos_pos.ingame)
             carga3=Objeto('positivo',(carga3pos_pos.posxn),(carga3pos_pos.posyn),carga3pos_pos.ingame)
@@ -1723,8 +1725,8 @@ class Gamestate():
             carga10=Objeto('neutro', (carga3net_pos.posxn), (carga3net_pos.posyn),carga3net_pos.ingame)
             maquina=Objeto('maquina', (maquinapos.posxn-1), (maquinapos.posyn-1),maquinapos)
 
-            #print(carga1pos.posn,'====>',carga1pos.posxn)
-            screen.blit(pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\tablero MK II.png").convert_alpha(), (390,110))
+            ###print(carga1pos.posn,'====>',carga1pos.posxn)
+            screen.blit(pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\tablero MK II.png").convert_alpha(), (390,110))
             screen.blit(UI,[0,0])
             screen.blit(maquina.image, maquina.posip)
             screen.blit(player.image,player.posip)
@@ -1762,20 +1764,20 @@ class Gamestate():
               if event.key == pygame.K_SPACE:
                   grab=True
                   proximo=proximidad(L, playerpos.posxn, playerpos.posyn) #busca la partícula más cercana al jugador
-                  print('aquí debería existir encontrado =============>')
+                  ##print('aquí debería existir encontrado =============>')
                   if proximo==False:
                       grab=False
                   if proximo!=False:
-                      #print('parent fue creado')
+                      ###print('parent fue creado')
                       parent,dx,dy=playerpos.parent(proximo)
-                      #print(parent,dx,dy)
+                      ###print(parent,dx,dy)
 
               if event.key == pygame.K_e:
                 if grab==True:
                   grab=False
                   player.grab=False
                   proximo.grabbed = False
-                  #print('grab false')
+                  ###print('grab false')
 
 
 
@@ -1784,7 +1786,7 @@ class Gamestate():
 
 
               if player.grab==True:
-                  print('aquí debería referenciar encontrado =============>')
+                  ##print('aquí debería referenciar encontrado =============>')
                   if event.key == pygame.K_DOWN:
                     playerpos.changeparent(proximo,'down',parent)
                   if event.key == pygame.K_UP:
@@ -1797,14 +1799,14 @@ class Gamestate():
             proton=proximomaquinap(L,(maquinapos.posxn),(maquinapos.posyn))
             electron=proximomaquinae(L,(maquinapos.posxn),(maquinapos.posyn))
             neutron=proximomaquinan(L,(maquinapos.posxn),(maquinapos.posyn))
-            print(pinicial)
+            ##print(pinicial)
             if proton!=None and electron!=None and neutron!=None:
                 contador=atomo(maquinapos,proton,electron,neutron,pinicial,proximo,player)
             else:
                 contador=None
             if contador!=None:
                 pinicial=contador
-            print(pinicial)
+            ##print(pinicial)
         timer_text = timer_font.render(datetime.utcfromtimestamp(timer_sec).strftime('%M:%S'), True, (255, 255, 255))
         counter=timer_font.render(datetime.utcfromtimestamp(pinicial).strftime('%S'),True,(255, 255, 255))
         if pinicial==0:
@@ -1813,9 +1815,9 @@ class Gamestate():
             global x
             x=0
             self.state='videoc_5'
-        print(timer_sec)
+        ##print(timer_sec)
         if timer_sec==0:
-            print('llega aqui----------------------------------')
+            ##print('llega aqui----------------------------------')
             self.state='gameover'
         screen.blit(UI,[0,0])
         screen.blit(imagenboton3,coorxy)
@@ -1852,8 +1854,8 @@ class pos():
 
     def changeparent(self,obj,dirc,parent):
 
-      print(parent,'parent')
-      print(dirc,'direccion')
+      ##print(parent,'parent')
+      ##print(dirc,'direccion')
 
       #MOVIMIENTO HACIA ABAJO
       if dirc=='down':
@@ -1862,24 +1864,24 @@ class pos():
             if parent=='izquierda':
               self.posxn= self.posxn+1
               obj.posxn= self.posxn
-              print('moviendo izquierda',obj.posxn)
+              ##print('moviendo izquierda',obj.posxn)
             #Carga a la derecha del personaje
             if parent=='derecha':
               self.posxn= self.posxn+1
               obj.posxn= self.posxn
-              print('moviendo derecha',obj.posxn)
+              ##print('moviendo derecha',obj.posxn)
             #Carga arriba del personaje
             if parent=='arriba':
               self.posxn= self.posxn+1
               obj.posxn=self.posxn-1
-              print('moviendo arriba',obj.posxn)
+              ##print('moviendo arriba',obj.posxn)
             #Carga abajo del personaje
             if parent=='abajo':
               if self.posxn!=6:
                 self.posxn= self.posxn+1
                 obj.posxn=self.posxn+1
 
-              print('moviendo abajo',obj.posxn)
+              ##print('moviendo abajo',obj.posxn)
 
 
 
@@ -1889,23 +1891,23 @@ class pos():
             if parent=='izquierda':
               self.posxn= self.posxn-1
               obj.posxn= self.posxn
-              print('moviendo izquierda',obj.posxn)
+              ##print('moviendo izquierda',obj.posxn)
             #Carga a la derecha del personaje
             if parent=='derecha':
               self.posxn= self.posxn-1
               obj.posxn= self.posxn
-              print('moviendo derecha',obj.posxn)
+              ##print('moviendo derecha',obj.posxn)
             #Carga arriba del personaje
             if parent=='arriba':
               if self.posxn!=1:
                 self.posxn= self.posxn-1
                 obj.posxn=self.posxn-1
-              print('moviendo arriba',obj.posxn)
+              ##print('moviendo arriba',obj.posxn)
             #Carga abajo del personaje
             if parent=='abajo':
               self.posxn= self.posxn-1
               obj.posxn=self.posxn+1
-              print('moviendo abajo',obj.posxn)
+              ##print('moviendo abajo',obj.posxn)
 
 
 
@@ -1916,23 +1918,23 @@ class pos():
               self.posyn= self.posyn+1
               obj.posyn= self.posyn-1
 
-              print('moviendo izquierda',obj.posyn)
+              ##print('moviendo izquierda',obj.posyn)
             #Carga a la derecha del personaje
             if parent=='derecha':
               if self.posyn!=6:
                 self.posyn= self.posyn+1
                 obj.posyn= self.posyn+1
-              print('moviendo derecha',obj.posyn)
+              ##print('moviendo derecha',obj.posyn)
             #Carga arriba del personaje
             if parent=='arriba':
               self.posyn= self.posyn+1
               obj.posyn=self.posyn
-              print('moviendo arriba',obj.posyn)
+              ##print('moviendo arriba',obj.posyn)
             #Carga abajo del personaje
             if parent=='abajo':
               self.posyn= self.posyn+1
               obj.posyn=self.posyn
-              print('moviendo abajo',obj.posyn)
+              ##print('moviendo abajo',obj.posyn)
 
 
       if dirc=='left':
@@ -1942,22 +1944,22 @@ class pos():
               if self.posyn!=1:
                 self.posyn= self.posyn-1
                 obj.posyn= self.posyn-1
-                print('moviendo izquierda',obj.posyn)
+                ##print('moviendo izquierda',obj.posyn)
             #Carga a la derecha del personaje
             if parent=='derecha':
               self.posyn= self.posyn-1
               obj.posyn= self.posyn+1
-              print('moviendo derecha',obj.posyn)
+              ##print('moviendo derecha',obj.posyn)
             #Carga arriba del personaje
             if parent=='arriba':
               self.posyn= self.posyn-1
               obj.posyn=self.posyn
-              print('moviendo arriba',obj.posyn)
+              ##print('moviendo arriba',obj.posyn)
             #Carga abajo del personaje
             if parent=='abajo':
               self.posyn= self.posyn-1
               obj.posyn=self.posyn
-              print('moviendo abajo',obj.posyn)
+              ##print('moviendo abajo',obj.posyn)
 
 
 
@@ -1973,22 +1975,22 @@ class pos():
         if dx==1 and dy==0:
           parent='izquierda'
           obj.grabbed = True
-          print('1')
+          ##print('1')
 
         elif dx==-1 and dy==0 :
           parent='derecha'
           obj.grabbed = True
-          print('2')
+          ##print('2')
 
         elif dy==1 and dx==0:
           parent='arriba'
           obj.grabbed = True
-          print('3')
+          ##print('3')
 
         elif dy==-1 and dx==0:
           parent='abajo'
           obj.grabbed = True
-          print('4')
+          ##print('4')
 
         else:
           parent='no'
@@ -2003,21 +2005,21 @@ def proximidad(L,posxn,posyn):
         k=i.posxn
         j=i.posyn
         if i.ingame==True:
-            print('posicion obj===',k,j,'posicion player===', posxn, posyn)
+            ##print('posicion obj===',k,j,'posicion player===', posxn, posyn)
 
             if abs(k-posxn)==1 and abs(j-posyn)==0:
-                print('k=',k, 'posxn=', posxn)
+                ##print('k=',k, 'posxn=', posxn)
                 return i
 
             if abs(j-posyn)==1 and abs(k-posxn)==0:
-                print('j=',j, 'posyn=', posyn)
+                ##print('j=',j, 'posyn=', posyn)
                 return i
 
     else:
         return encontrado
 
 def proximomaquinap(L,posxnm,posynm):
-    #print('llega a la funcion')
+    ###print('llega a la funcion')
 
     positivo=None
     for i in L:
@@ -2028,7 +2030,7 @@ def proximomaquinap(L,posxnm,posynm):
                 return positivo
 
 def proximomaquinae(L,posxnm,posynm):
-    #print('llega a la funcion')
+    ###print('llega a la funcion')
     negativo=None
     for i in L:
         if i.ingame==True:
@@ -2038,7 +2040,7 @@ def proximomaquinae(L,posxnm,posynm):
                 return negativo
 
 def proximomaquinan(L,posxnm,posynm):
-    #print('llega a la funcion')
+    ###print('llega a la funcion')
     neutro=None
     for i in L:
         if i.ingame==True:
@@ -2053,22 +2055,22 @@ def atomo(posm,posp,pose,posn,atomos,proximo,player):
     electron=False
     proton=False
     if posp.ingame!=False and pose.ingame!=False and posn.ingame!=False:
-        #print(posm.posxn,'-',pose.posxn,'=0       ',posm.posyn,'-',pose.posyn,'===1')
+        ###print(posm.posxn,'-',pose.posxn,'=0       ',posm.posyn,'-',pose.posyn,'===1')
         if posm.posxn-posn.posxn==1 and posm.posyn-posn.posyn==0:
-            #print('si es la distancia')
+            ###print('si es la distancia')
             if posn.tipo=='neutro':
                 neutron=True
 
         if posm.posyn-posp.posyn==1 and posm.posxn-posp.posxn==0:
-            #print('si es la distancia',posp.tipo)
+            ###print('si es la distancia',posp.tipo)
             if posp.tipo=='positivo':
                 proton=True
 
         if posm.posyn-pose.posyn==-1 and posm.posxn-pose.posxn==0:
-            #print('si es la distancia',pose.tipo)
+            ###print('si es la distancia',pose.tipo)
             if pose.tipo=='negativo':
                 electron=True
-                #print('electro======>')
+                ###print('electro======>')
 
         if neutron==True and proton==True and electron==True:
             atomos=atomos-1
@@ -2077,7 +2079,7 @@ def atomo(posm,posp,pose,posn,atomos,proximo,player):
             posn.ingame=False
             player.grab=False
             proximo.grabbed = False
-            print('===========//////////////////////////////////////////////////_________________________________________\\\\\\\\\\\\\\\\\\\\\\\\ atomo debe ser 2----',atomos)
+            ##print('===========//////////////////////////////////////////////////_________________________________________\\\\\\\\\\\\\\\\\\\\\\\\ atomo debe ser 2----',atomos)
             return atomos
 
 #INTERACCIÓN OBJETO A OBJETO
@@ -2088,11 +2090,11 @@ def cercania(L):
   for i in q:
     k=i.posxn
     j=i.posyn
-    #print('nuevo i', 'k=',k,'j=', j)
+    ###print('nuevo i', 'k=',k,'j=', j)
     for o in q:
       g= o.posxn
       h=o.posyn
-      #print('nuevo o', 'k=',k,'j=', j)
+      ###print('nuevo o', 'k=',k,'j=', j)
       if i.ingame==True and o.ingame==True:
     #REPELER
 
@@ -2104,20 +2106,20 @@ def cercania(L):
                   if i.tipo==o.tipo:
 
                     if i.posxn>o.posxn:
-                      print('alejo')
+                      ##print('alejo')
                       if i.grabbed==False:
                           i.posxn=i.posxn+1
                       if o.grabbed==False:
                           o.posxn=o.posxn-1
 
                     if i.posxn<o.posxn:
-                      print('alejo2')
+                      ##print('alejo2')
                       if i.grabbed==False:
                           i.posxn=i.posxn-1
                       if o.grabbed==False:
                           o.posxn=o.posxn+1
 
-                    print('repeler===>vertical',i.tipo, (i.posxn,i.posyn), o.tipo, (o.posxn,o.posyn))
+                    ##print('repeler===>vertical',i.tipo, (i.posxn,i.posyn), o.tipo, (o.posxn,o.posyn))
 
 
                     q.remove(i)
@@ -2133,20 +2135,20 @@ def cercania(L):
                   if i.tipo==o.tipo:
 
                     if i.posyn>o.posyn:
-                      print('alejo')
+                      ##print('alejo')
                       if i.grabbed==False:
                           i.posyn=i.posyn+1
                       if o.grabbed==False:
                           o.posyn=o.posyn-1
 
                     if i.posyn<o.posyn:
-                      print('alejo2')
+                      ##print('alejo2')
                       if i.grabbed==False:
                           i.posyn=i.posyn-1
                       if o.grabbed==False:
                           o.posyn=o.posyn+1
 
-                    print('repeler===>lados',i.tipo, (i.posxn,i.posyn), o.tipo, (o.posxn,o.posyn))
+                    ##print('repeler===>lados',i.tipo, (i.posxn,i.posyn), o.tipo, (o.posxn,o.posyn))
 
 
                     q.remove(i)
@@ -2158,7 +2160,7 @@ def cercania(L):
               if i.tipo!='neutro' and o.tipo!='neutro':
                   if i.tipo!=o.tipo:
                       if i.posxn>o.posxn:
-                          print('atrae')
+                          ##print('atrae')
                           if i.grabbed==False:
                               i.posxn=i.posxn-1
                           if o.grabbed==False:
@@ -2166,7 +2168,7 @@ def cercania(L):
                                  o.posxn=o.posxn+1
 
                       if i.posxn<o.posxn:
-                          print('atare2')
+                          ##print('atare2')
                           if i.grabbed==False:
                               i.posxn=i.posxn+1
                           if o.grabbed==False:
@@ -2174,7 +2176,7 @@ def cercania(L):
                                   o.posxn=o.posxn-1
 
 
-                      print('atraer===>VERTICAL',i.tipo, (i.posxn,i.posyn), o.tipo, (o.posxn,o.posyn))
+                      ##print('atraer===>VERTICAL',i.tipo, (i.posxn,i.posyn), o.tipo, (o.posxn,o.posyn))
 
                       q.remove(i)
                       q.remove(o)
@@ -2188,40 +2190,40 @@ def cercania(L):
                   if i.tipo!=o.tipo:
 
                     if i.posyn>o.posyn:
-                      print('atrae')
+                      ##print('atrae')
                       if i.grabbed==False:
                           i.posyn=i.posyn-1
                       if o.grabbed==False:
                           o.posyn=o.posyn+1
 
                     if i.posyn<o.posyn:
-                      print('atrae2')
+                      ##print('atrae2')
                       if i.grabbed==False:
                           i.posyn=i.posyn+1
                       if o.grabbed==False:
                           o.posyn=o.posyn-1
 
-                    print('atraer===>LADOS',i.tipo, (i.posxn,i.posyn), o.tipo, (o.posxn,o.posyn))
-                    print(i.grabbed, o.grabbed)
+                    ##print('atraer===>LADOS',i.tipo, (i.posxn,i.posyn), o.tipo, (o.posxn,o.posyn))
+                    ##print(i.grabbed, o.grabbed)
 
                     q.remove(i)
                     q.remove(o)
 
     #MISMA POSICIÓN
-          print('tipo i=',i.tipo,'tipo o= ',o.tipo,i.posxn,'-',o.posxn,'===0               ',i.posyn,'-',o.posyn,'=====0')
+          ##print('tipo i=',i.tipo,'tipo o= ',o.tipo,i.posxn,'-',o.posxn,'===0               ',i.posyn,'-',o.posyn,'=====0')
           if i!=o:
               if abs(i.posxn-o.posxn)==0 and abs(i.posyn-o.posyn)==0:
-                      print('posiciones iguales')
+                      pass
 
 def equilibrio(l):
     q=cercania(l)
     if q!=l:
         equi=False
-        #print('equilibrio ============>', equi)
+        ###print('equilibrio ============>', equi)
     if q==l:
         equi=True
-        #print('q y l son iguales')
-        #print('equilibrio ============>', equi)
+        ###print('q y l son iguales')
+        ###print('equilibrio ============>', equi)
 timer_limit = 360
 inicio=time.time()
 sentido='0'
@@ -2250,15 +2252,15 @@ playerpos=pos('personaje',[0,0])
 
 
 
-fondo2 = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\fondo2.png").convert()
+fondo2 = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\fondo2.png").convert()
 
-portada = pygame.image.load("D:\\un\\2021-1\\programacion\\compu\\assets\\title card.png").convert()
+portada = pygame.image.load("C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\assets\\title card.png").convert()
 
-boton1a = pygame.image.load('D:\\un\\2021-1\\programacion\\compu\\botones\\jugar_0.png').convert_alpha()
-boton1b = pygame.image.load('D:\\un\\2021-1\\programacion\\compu\\botones\\jugar_1.png').convert_alpha()
-boton1 = Boton('jugar', 'D:\\un\\2021-1\\programacion\\compu\\botones\\jugar_0.png', [640 - 152, 420 - 32])
+boton1a = pygame.image.load('C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\jugar_0.png').convert_alpha()
+boton1b = pygame.image.load('C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\jugar_1.png').convert_alpha()
+boton1 = Boton('jugar', 'C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\jugar_0.png', [640 - 152, 420 - 32])
 
-UI = pygame.image.load('D:\\un\\2021-1\\programacion\\compu\\botones\\margenes.png').convert_alpha()
+UI = pygame.image.load('C:\\Users\\valer\\Desktop\\Prog\\electromag-main\\botones\\margenes.png').convert_alpha()
 
 clock = pygame.time.Clock()
 
@@ -2274,7 +2276,7 @@ parent = None
 
 grab = False
 proximo=False
-#print(dir(Gamestate))
+###print(dir(Gamestate))
 inicio=time.time()
 while not done:
 
